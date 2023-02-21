@@ -1,5 +1,19 @@
+import { QuioscoProvider } from '../context/QuioscoProvider'
 import '@/styles/globals.css'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+
+
+function App({ Component, pageProps }) {
+  // import { QuioscoProvider } from '@/context/QuioscoProvider'
+
+// import { QuioscoProvider } from '@/context/QuioscoProvider'
+// import { QuioscoProvider } from '@/context/QuioscoProvider'
+  // return <Component {...pageProps} />
+  return (
+    <QuioscoProvider>
+       <Component {...pageProps} />
+    </QuioscoProvider>
+  )
 }
+export default App

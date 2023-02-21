@@ -36,3 +36,79 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Crear Proyecto en next js
+npx create-next-app@latest
+Escribiras ombre ,tipo (js o ts) ,(con o sin eslint)
+## Instalar dependecias
+
+    npn i  - D tailwindcss postcss autoprefixer
+    Esto funciono =>    npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+## Crea el archivo porcss.cofig.js
+    npx tailwindcss init -p
+
+## Prisma
+Es una ORM (existe dif ORM para diferenctes lenguaje de progrmacion)
+Tiene metodos para:
++ seleccionar datos
++ crear datos
++ actualizarlos datos
++ eliminarlos datos
+
+Este soporta PostgreSQL,MySQL,SQL server,SQLite
+and MongoDB
+
+Benneficios :Prisma permtie crear aplicaciones fullstack sin necesidad de una api
+I nteractuando directamete con una base de datos
+## Abrir shel de mysql yb ejecutar esto funcionara cuanto activamos el puerto
+
+mysql -u root
+## Instalar Prisma
+ npm i -D prisma
+npm i @prisma/client
+## creara .env y conexion
+npx prisma init
+
+
++npx prisma migrate dev(actualizar la tabla o crear)
+NOTE:connfigurar env y el schema.prisma  con mysql
++name for migration:categorias y productos
+Acciones
++ Eliminar un los datos de todas las tablas : ```npx prisma migrate reset``` (funnciona en el mismo EC Visual estudio  no fuera)
++ Abrir una ventana para visualizar los datos y inicializar : `npx prisma studio`
++ Para que node soporte ts ```npm i ts-node``` => "seed":"ts-node prisma/seed.ts" (permitira ejecutar un script en ese archivo)=> ```npx prisma db seed```
+
+## Instalando react Modal
+
+## AXIOS
++ npm i axios
+## React Modal
++ npm install --save react-modal
+## React toastify
++  npm install --save react-toastify
+
+
+### Siempre ejecutar para ver funcionando
++ Encender xampp en el puerto 3306
++ Abrir una ventana para visualizar los datos y inicializar : `npx prisma studio`
++npm run dev
+## SWR (Stale While Revalidate)
+useSWR Hook para consultar o obtener API's (creado por Vercel)
++Consultas en tiempo real
++ PAginacion
++Obtenner actualizados tus datos
+
++install : ```npm i swr```
+
+## DeployMent
++ subir a gitHub 
+En Ralway
+
+cod en consola
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/JAlvaroC/quioscoapp_deploymennt.git
+git push -u origin main
