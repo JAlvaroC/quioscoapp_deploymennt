@@ -106,9 +106,22 @@ useSWR Hook para consultar o obtener API's (creado por Vercel)
 En Ralway
 
 cod en consola
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/JAlvaroC/quioscoapp_deploymennt.git
-git push -u origin main
++ git init
++ git add .
++ git commit -m "first commit"
++ git branch -M main
++ git remote add origin https://github.com/JAlvaroC/quioscoapp_deploymennt.git
++ git push -u origin main
+
+
+## Exportar nuestra BD y subir a railway
++ Provision sql : y ponnemos lo que hemos exportado
++ Conectaremos tablePlus a Railway
+
+![](./TablePlus%20Railway.jpg)
+>Llenamos para conectar con railwey
++ conectamos y importamos y automaticamente ya estara instalado 
++ hacemos deploy en railway en la misma carpeta de la base de datos
++ agregamos la variable de entorno 
++ generemoa el link en settings (generate Domain)
++ Corregimos las tablas producto => Producto en( Mac no hay problema) la base de datos esta en minuscula

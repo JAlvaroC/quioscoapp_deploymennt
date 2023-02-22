@@ -41,7 +41,8 @@ const Orden = ({ orden }) => {
                     
                     width={400}
                     height={500}
-                    src={`/assets/img/${platillo.imagen}.jpg`}
+                    // src={`/assets/img/${platillo.imagen}.jpg`}
+                    src={`/assets/img/${platillo.imagen}`}
                     alt={`Imagen Platillo ${platillo.nombre}`}
                     />
 
